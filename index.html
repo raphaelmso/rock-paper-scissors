@@ -7,15 +7,36 @@
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header><h1 class="main-title">ROCK * PAPER * SCISSORS</h1></header>
-    <main>
-      <section class="game">
-        <div class="choice" id="rock"></div>
-        <div class="choice" id="paper"></div>
-        <div class="choice" id="scissors"></div>
+    <header class="main-title">
+      <h1 class="title">ROCK * PAPER * SCISSORS</h1>
+    </header>
+    <section class="game-choices">
+      <div class="choice" id="rock">R</div>
+      <div class="choice" id="paper">P</div>
+      <div class="choice" id="scissors">S</div>
+    </section>
+    <div class="bottom-info">
+      <section class="game-scores">
+        <div class="score">
+          <p class="name-score">Player</p>
+          <p id="player-score">0</p>
+        </div>
+        <div class="score">
+          <p class="name-score">Computer</p>
+          <p id="computer-score">0</p>
+        </div>
+        <div class="score">
+          <p class="name-score">Draws</p>
+          <p id="draw-score">0</p>
+        </div>
       </section>
-    </main>
-    <footer><p class="info"></p></footer>
+      <section class="game-rules">RULES</section>
+    </div>
+    <footer class="info">
+      <p class="credits">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+      </p>
+    </footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
