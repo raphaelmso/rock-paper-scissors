@@ -10,23 +10,56 @@
   <body>
     <main class="game">
       <header class="main-title">
+        <button class="btn restart-game">Restart / Play again</button>
         <h1 class="title">ROCK * PAPER * SCISSORS</h1>
+        <button class="btn game-rules">RULES</button>
       </header>
       <section class="game-choices">
-       <div class="choice emoji-background emoji" id="rock">✌️</div>
-        <div class="choice emoji-background emoji" id="paper">✋</div>
-        <div class="choice emoji-background emoji" id="scissors">✊</div>
+        <div class="choice img-background" id="rock">
+          <img class="img" src="assets/images/rock.png" alt="" />
+        </div>
+        <div class="choice img-background" id="paper">
+          <img class="img" src="assets/images/paper.png" alt="" />
+        </div>
+        <div class="choice img-background" id="scissors">
+          <img class="img" src="assets/images/scissors.png" alt="" />
+        </div>
       </section>
       <div class="middle-info">
-<p class="live-info">
+        <p class="live-info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
           architecto quia ex atque blanditiis laborum nihil illum?
         </p>
-        <div class="game-results">
-          <div class="emoji-background emoji" >😃</p></div>
-          <div class="emoji-background emoji" >🤖</div>
+        <div class="game-info">
+          <div class="game-results">
+            <div class="img-background float">
+              <img
+                class="img"
+                src="assets/images/faces/win/win--2.png"
+                alt=""
+              />
+              <img
+                class="img-small img-small--right hidden"
+                id="player-choice"
+                src="assets/images/rock.png"
+                alt=""
+              />
+            </div>
+            <div class="img-background float">
+              <img
+                class="img"
+                src="assets/images/faces/lose/lose--4.png"
+                alt=""
+              />
+              <img
+                class="img-small img-small--left hidden"
+                id="computer-choice"
+                src="assets/images/rock.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        
       </div>
       <div class="bottom-info">
         <section class="game-scores">
@@ -43,7 +76,6 @@
             <p id="draw-score">0</p>
           </div>
         </section>
-        <button class="game-rules">RULES</button>
       </div>
       <footer class="info">
         <p class="credits">
