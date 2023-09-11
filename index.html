@@ -9,7 +9,7 @@
   </head>
   <body>
     <main class="game">
-      <header class="main-title">
+      <header class="header">
         <button class="btn restart-game">Restart / Play again</button>
         <h1 class="title">ROCK * PAPER * SCISSORS</h1>
         <button class="btn game-rules">RULES</button>
@@ -26,61 +26,37 @@
         </div>
       </section>
       <div class="middle-info">
-        <p class="live-info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
-          architecto quia ex atque blanditiis laborum nihil illum?
-        </p>
-        <div class="game-info">
-          <div class="game-results">
-            <div class="img-background float">
-              <img
-                class="img"
-                src="assets/images/faces/win/win--2.png"
-                alt=""
-              />
-              <img
-                class="img-small img-small--right hidden"
-                id="player-choice"
-                src="assets/images/rock.png"
-                alt=""
-              />
-            </div>
-            <div class="img-background float">
-              <img
-                class="img"
-                src="assets/images/faces/lose/lose--4.png"
-                alt=""
-              />
-              <img
-                class="img-small img-small--left hidden"
-                id="computer-choice"
-                src="assets/images/rock.png"
-                alt=""
-              />
-            </div>
+        <div class="game-results">
+          <div class="img-background float">
+            <h2 class="game-score">You</h2>
+            <img class="img" src="assets/images/faces/win/win--2.png" alt="" />
+            <img
+              class="img-small img-small--right hidden"
+              id="player-choice"
+              src="assets/images/rock.png"
+              alt=""
+            />
+            <h2 class="game-score" id="player-score">0</h2>
+          </div>
+          <div class="img-background float">
+            <h2 class="game-score">Computer</h2>
+            <img
+              class="img"
+              src="assets/images/faces/lose/lose--4.png"
+              alt=""
+            />
+            <img
+              class="img-small img-small--left hidden"
+              id="computer-choice"
+              src="assets/images/rock.png"
+              alt=""
+            />
+            <h2 class="game-score" id="computer-score">0</h2>
           </div>
         </div>
       </div>
-      <div class="bottom-info">
-        <section class="game-scores">
-          <div class="score">
-            <p class="name-score">Player</p>
-            <p id="player-score">0</p>
-          </div>
-          <div class="score">
-            <p class="name-score">Computer</p>
-            <p id="computer-score">0</p>
-          </div>
-          <div class="score">
-            <p class="name-score">Draws</p>
-            <p id="draw-score">0</p>
-          </div>
-        </section>
-      </div>
-      <footer class="info">
-        <p class="credits">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-        </p>
+      <footer class="footer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
       </footer>
     </main>
     <div class="overlay hidden">
