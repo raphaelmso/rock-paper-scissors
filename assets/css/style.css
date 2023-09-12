@@ -27,10 +27,12 @@
 }
 
 .header {
+  position: relative;
   margin: 3vh;
   display: flex;
   width: 100vw;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -90,6 +92,7 @@
 .choice:hover,
 .choice:active {
   opacity: 1;
+
   transition: 0.1s;
 }
 
@@ -99,10 +102,30 @@
 
 .btn {
   margin: 0 1vw;
-  height: 5vh;
-  width: 5vw;
+  border: none;
   border-radius: 10px;
   font-size: 1vw;
+  color: white;
+  background-color: #242728;
+
+  text-align: center;
+  padding: 0.5vw;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn:active {
+  background-color: white;
+  color: #242728;
+
+  transition: 0.1s;
+}
+
+.restart-game {
+  position: relative;
 }
 
 .footer {
