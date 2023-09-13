@@ -10,9 +10,9 @@
   <body>
     <main class="game">
       <header class="header">
-        <button class="btn restart-game">Restart / Play again</button>
-        <h1 class="title">ROCK * PAPER * SCISSORS</h1>
-        <button class="btn game-rules">RULES</button>
+        <h1 class="title">ROCK, PAPER AND SCISSORS</h1>
+        <button class="btn" id="game-restart">Restart / Play again</button>
+        <button class="btn" id="game-rules">RULES</button>
       </header>
       <section class="game-choices">
         <div class="choice img-background" id="rock">
@@ -25,34 +25,29 @@
           <img class="img" src="assets/images/scissors.png" alt="" />
         </div>
       </section>
-      <div class="middle-info">
-        <div class="game-results">
-          <div class="img-background float">
-            <h2 class="game-score">You</h2>
-            <img class="img" src="assets/images/faces/win/win--2.png" alt="" />
-            <img
-              class="img-small img-small--right hidden"
-              id="player-choice"
-              src="assets/images/rock.png"
-              alt=""
-            />
-            <h2 class="game-score" id="player-score">0</h2>
-          </div>
-          <div class="img-background float">
-            <h2 class="game-score">Computer</h2>
-            <img
-              class="img"
-              src="assets/images/faces/lose/lose--4.png"
-              alt=""
-            />
-            <img
-              class="img-small img-small--left hidden"
-              id="computer-choice"
-              src="assets/images/rock.png"
-              alt=""
-            />
-            <h2 class="game-score" id="computer-score">0</h2>
-          </div>
+      <div class="info">Make a choice to start playing!</div>
+      <div class="game-results">
+        <div class="img-background float">
+          <h2 class="game-score">You</h2>
+          <img class="img" src="assets/images/faces/win/win--2.png" alt="" />
+          <img
+            class="img-small img-small--right hidden"
+            id="player-choice"
+            src="assets/images/rock.png"
+            alt=""
+          />
+          <h2 class="game-score" id="player-score">0</h2>
+        </div>
+        <div class="img-background float">
+          <h2 class="game-score">Computer</h2>
+          <img class="img" src="assets/images/faces/lose/lose--4.png" alt="" />
+          <img
+            class="img-small img-small--left hidden"
+            id="computer-choice"
+            src="assets/images/rock.png"
+            alt=""
+          />
+          <h2 class="game-score" id="computer-score">0</h2>
         </div>
       </div>
       <footer class="footer">
